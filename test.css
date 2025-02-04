@@ -1,0 +1,20 @@
+button {
+    transition: all .5s ease;
+    color: #747172;
+    border: 3px solid #79c350;
+    font-family:'Poppins', sans-serif;
+--!    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 14px;
+    font-weight:bold;
+    background-color : transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+    width: 200px;
+}
+button:hover {
+    color: #001F3F;
+    background-color: #79c350;
+}
