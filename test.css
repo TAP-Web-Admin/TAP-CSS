@@ -1,111 +1,31 @@
 * {
   box-sizing: border-box; 
   font-family: "Poppins", Helvetica, Arial, sans-serif;
-}
-body { /* Just some padding for the demo */
-  padding: 0 50px; 
-  font-family: 'Roboto', Arial;
-  font-weight: 300;
-}
-p { /* Just some padding for the demo */
-  margin-top: 0;
+  padding: 0 20px;
   text-align: center;
 }
-a {
-  color: #1da1f2;
-  font-weight: bold;
+
+.TAP_CT p {
+  font-weight: 300;
 }
-h3 {
-  margin: 0;
-  color: #ffffff;
-}
-.container {
-  background: #fff;
-  max-height: calc(100vh - 80px);
-  overflow: auto;
-}
-table {
-}
-th {
-  position: sticky; /* Make th sticky to avoid JavaScript */
+.TAP_CT th {
   z-index: 1;
   border: 1px;
   border-radius: 10px 10px 1px 1px;
+  background-color: #79c350;
   top: 0;
-}
-td,
-th {
-  padding: 5px;
-  min-width: 200px; /* Add a minimum width below which no resize is allowed (for small screens). It can be whatever serves the design best */
   text-align: center;
+  width: 25%;
 }
-.products-2 th,
-.products-2 td {
-    width: 50%; /* Depending on the number of products in comparison, different classes should be used (e.g. 3 products should have a .products-3 class with a width of 33.333%) */
-}
-
-.products-4 th,
-.products-4 td {
-    width: 25%; /* Depending on the number of products in comparison, different classes should be used (e.g. 3 products should have a .products-3 class with a width of 33.333%) */
-}
-th {
-  background: #79c350;
-  top: -2px; /* We need this to attach the "stuck" attribute */
-  
-}
-th img {
-  height: 0;
-    margin: 0 auto;
-      display: block;
-  transition: height 200ms ease-in-out;
-}
-.sticky img {
-  height: 100px;
-}
-.label {
-  font-weight: bold;
-  text-align: left;
-  min-width: 150px; /* Labels should have a strict width, based on the design (150px is just for this demo) */
-  border-radius: 1px;
-  width: 150px; /* In order to enforce the width we need to apply both a min-width and a width with the same value */
-  background: #eee;
-}
-th.label {
-  background: #fff;
-  border-color: #fff;
+.TAP_CT tr {
+  font-weight: 300;
 }
 
-.heading {
-  background: #2c363f;
-  width: 100%;
-  text-align: left;
-  position: relative;
-  border-radius: 10px;
-}
-.main-heading {
-  background: #2c363f;
-  width: 100%;
-  text-align: left;
-  position: sticky;
-   
-  border-radius: 10px 1px 10px 1px;
-  color: #ffffff;
-}
-.heading span {
-  position: sticky;
-  top: 0;
-  left: 10px;
-}
-@media all and (max-width: 600px) { /* The breakpoint is indicative. You might want to break it on a different limit */
-  body {
-    padding: 0; /* Just for the demo */
-  }
-  .label {
-    display: none; /* We want to hide the labels on small screens... */
-  }
-  .spec::before { /* ...and show them above each spec instead. */
-    content: attr(spec-title);
-    color: #999;
-    display: block;
-  }
-}
+.TAP_CT_Row_Label {
+ font-weight: 600;
+ background-color: #2c363f;
+ color: #ffffff;
+ border-radius: 10px 1px 1px 10px;
+ text-align: left;
+ width: 10%;
+} 
